@@ -1,0 +1,60 @@
+body {
+  background: #111;
+  color: #ccc;
+}
+
+@keyframes fadeIn {
+  from {
+    top: 40%;
+    opacity: 0;
+  }
+  to {
+    top: 100;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  from {
+    top: 20%;
+    opacity: 0;
+  }
+  to {
+    top: 100;
+    opacity: 1;
+  }
+}
+.wrapper {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  animation: fadeIn 1000ms ease;
+  -webkit-animation: fadeIn 1000ms ease;
+}
+
+h1 {
+  font-size: 7rem;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 0;
+  letter-spacing: -1px;
+  line-height: 1;
+  font-weight: 600;
+  text-align: center;
+  transition: color 0.25s;
+}
+h1 .asterix {
+  color: #666;
+  margin-left: 5px;
+  transition: color 0.25s;
+}
+h1:hover .asterix {
+  color: red;
+}
+
+p {
+  text-align: center;
+  margin: 17px;
+  font-family: "Inter", sans-serif;
+  font-weight: normal;
+}
