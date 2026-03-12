@@ -49,7 +49,7 @@ h1 .asterix {
   transition: color 0.25s;
 }
 h1:hover .asterix {
-  color: red;
+  color: #ac8047;
 }
 
 p {
